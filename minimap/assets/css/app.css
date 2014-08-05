@@ -1,0 +1,29 @@
+body {
+  width: 2000px;
+  height: 2000px;
+}
+
+h1 {
+  position: fixed;
+  top: 180px;
+}
+
+.world {
+  position: fixed;
+  background-color: #ddd;
+  width: 100px;
+  height: 100px;
+  display: block;
+  z-index: 0;
+}
+
+.view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFDC00;
+  width: 0;
+  height: 0;
+  display: block;
+  z-index: 999;
+}
