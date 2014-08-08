@@ -9,3 +9,15 @@ exports.height = function() {
 
   return window.innerHeight;
 };
+
+exports.scroll_top = function() {
+  "use strict";
+
+  return document.body.scrollTop;
+};
+
+exports.scroll_left = function() {
+  "use strict";
+
+  return document.body.scrollLeft;
+};

@@ -18,9 +18,9 @@ Minimap.prototype.sync = function(dimensions){
       max_height    = base_unit * (world_height / world_width),
       width_ratio   = view_width / world_width,
       height_ratio  = view_height / world_height,
-      scroll_top    = document.body.scrollTop,
-      scroll_left   = document.body.scrollLeft,
-      top_offset    = (scroll_top / world_height) * base_unit;
+      scroll_top    = dimensions.view_scroll_top,
+      scroll_left   = dimensions.view_scroll_left,
+      top_offset    = (scroll_top / world_height) * base_unit,
       left_offset   = (scroll_left / world_width) * base_unit;
 
   // set width & height on container
