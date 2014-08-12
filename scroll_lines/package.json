@@ -23,7 +23,6 @@
   "homepage": "https://github.com/xta/affordance",
   "devDependencies": {
     "browserify": "^5.9.1",
-    "css": "^2.1.0",
     "gulp": "^3.8.6",
     "gulp-concat": "^2.3.4",
     "gulp-jshint": "^1.8.3",

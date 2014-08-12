@@ -1,6 +1,5 @@
 var $           = require('jquery');
 var dimensions  = require('./../../../minimap/assets/js/lib/dimensions');
-// var css = require('css');
 
 $(function() {
 
