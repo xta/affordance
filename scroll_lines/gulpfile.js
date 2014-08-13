@@ -33,7 +33,13 @@ gulp.task('lint-app', function() {
         .pipe(jshint.reporter('default'));
 });
 
-gulp.task('lint', ['lint-app']);
+gulp.task('lint-lib', function() {
+    return gulp.src('assets/js/lib/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+
+gulp.task('lint', ['lint-app', 'lint-lib']);
 
 // Concatenate, Browserify & Minify JS
 gulp.task('scripts', function() {
@@ -57,8 +63,8 @@ gulp.task('watch', function () {
     );
 
     gulp.watch('assets/css/*.scss', ['styles']);
-
     gulp.watch('assets/js/*.js', ['lint', 'scripts']);
+    gulp.watch('assets/js/lib/*.js', ['lint', 'scripts']);
 });
 
 // Default Task
