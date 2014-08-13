@@ -3,12 +3,8 @@ body {
   height: 2000px;
 }
 
-h1 {
-  position: fixed;
-  top: 180px;
-}
-
 .world {
+  top: 200px;
   position: fixed;
   background-color: #ddd;
   width: 100px;
