@@ -1,25 +1,21 @@
+$primary-color: #111111;
+$primary-bg-color: #ccc;
+$alt-bg-color: #ddd;
+
 body {
-  color: white;
+  color: $primary-color;
 
   height: 1000px;
 
   background: repeating-linear-gradient(
     90deg,
-    #000,
-    #000 10px,
-    #333 10px,
-    #333 20px
+    $primary-bg-color,
+    $primary-bg-color 10px,
+    $alt-bg-color 10px,
+    $alt-bg-color 20px
   );
 
-  h1, p {
-    position: fixed;
-  }
-
-  p {
-    top: 70px;
-  }
-
   a {
-    color: white;
+    color: $primary-color;
   }
 }
