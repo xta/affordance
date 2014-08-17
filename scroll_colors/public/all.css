@@ -1,0 +1,12 @@
+body {
+  height: 2000px;
+  background-color: #ff851b; }
+
+h1 {
+  color: #0074d9;
+  position: fixed; }
+
+p {
+  color: #b10dc9;
+  position: fixed;
+  margin-top: 200px; }

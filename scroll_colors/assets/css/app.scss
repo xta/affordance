@@ -1,0 +1,19 @@
+$orange-color: rgb(255,133,27);
+$blue-color: rgb(0,116,217);
+$purple-color: rgb(177,13,201);
+
+body {
+  height: 2000px;
+  background-color: $orange-color;
+}
+
+h1 {
+  color: $blue-color;
+  position: fixed;
+}
+
+p {
+  color: $purple-color;
+  position: fixed;
+  margin-top: 200px;
+}
