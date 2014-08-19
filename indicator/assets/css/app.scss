@@ -1,0 +1,74 @@
+// ------------------------------------------------------
+// SASS Setup
+// ------------------------------------------------------
+
+$center-side: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAANElEQVQYV2NkIBIwEqmOgTyFd+/e/Q+zQVlZGcUQFA5IIUgBjEZ2FoZCokzE5zHyPEMVEwFV+xALbUfg9AAAAABJRU5ErkJggg==";
+
+$left-side: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAALklEQVQYV2NkIBIwEqmOgTSF9bf//29UZcSriZEYRSDngU0hRjFpbiTG59Q3EQBNLgwL/S+ddQAAAABJRU5ErkJggg==";
+
+$right-side: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAALElEQVQYV2NkIBIwEqmOgToK62///9+oygg2jKCJMMV4FZJkIsyzBK2mnUIADR8MC0u33qIAAAAASUVORK5CYII=";
+
+$top-side: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKUlEQVQYV2NkQAP1t///b1RlZEQXRxGAKcKmGEMnukkw/qhCXCEDFgcAFYgMC1dHANoAAAAASUVORK5CYII=";
+
+$bottom-side: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKUlEQVQYV2NkIBIwEqmOYfgqrL/9/3+jKiMjjEYOEQxfY1ME0kB08AAARMUMC++l2MkAAAAASUVORK5CYII=";
+
+$bg-px: 20px;
+
+@mixin bg-size($px) {
+  background-size: $px $px;
+}
+
+// ------------------------------------------------------
+// Styles
+// ------------------------------------------------------
+
+body {
+
+  width: 2000px;
+  height: 2000px;
+
+  background:
+    url( $center-side ) repeat;
+  @include bg-size($bg-px);
+
+  &.left {
+    background:
+      url( $center-side) repeat,
+      url( $left-side ) repeat;
+    @include bg-size($bg-px);
+  }
+
+  &.right {
+
+    background:
+      url( $center-side) repeat,
+      url( $right-side ) repeat;
+    @include bg-size($bg-px);
+  }
+
+  &.top {
+  @include bg-size($bg-px);
+    background:
+      url( $center-side) repeat,
+      url( $top-side ) repeat;
+    @include bg-size($bg-px);
+  }
+
+  &.bottom {
+  @include bg-size($bg-px);
+    background:
+      url( $center-side) repeat,
+      url( $bottom-side ) repeat;
+    @include bg-size($bg-px);
+  }
+
+}
+
+h1 {
+  position: fixed;
+}
+
+p {
+  position: fixed;
+  margin-top: 100px;
+}
