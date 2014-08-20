@@ -12,8 +12,6 @@ exports.update_bg = function() {
       top_img     = "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKUlEQVQYV2NkQAP1t///b1RlZEQXRxGAKcKmGEMnukkw/qhCXCEDFgcAFYgMC1dHANoAAAAASUVORK5CYII=)",
       bottom_img  = "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKUlEQVQYV2NkIBIwEqmOYfgqrL/9/3+jKiMjjEYOEQxfY1ME0kB08AAARMUMC++l2MkAAAAASUVORK5CYII=)";
 
-console.log(current_dimensions);
-
   var world_width   = current_dimensions.world_width,
       world_height  = current_dimensions.world_height,
       view_width    = current_dimensions.view_width,
